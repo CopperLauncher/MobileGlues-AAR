@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'ru.whbex.nggl4eswrapper'
+    namespace 'ru.whbex.mobileglues_aar'
     compileSdk 36
 
     defaultConfig {
@@ -26,12 +26,11 @@ android {
 
     externalNativeBuild {
         cmake {
-            path "src/main/gl4es/CMakeLists.txt"
+            path "src/main/mg/MobileGlues-cpp/CMakeLists.txt"
         }
     }
 }
 
 dependencies {
-    implementation libs.appcompat
-    implementation libs.material
+
 }
